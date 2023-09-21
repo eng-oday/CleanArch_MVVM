@@ -15,6 +15,13 @@
 		F8BD839C2ABC4B97006E069A /* Clean_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD839B2ABC4B97006E069A /* Clean_MVVMTests.swift */; };
 		F8BD83A62ABC4B97006E069A /* Clean_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83A52ABC4B97006E069A /* Clean_MVVMUITests.swift */; };
 		F8BD83A82ABC4B97006E069A /* Clean_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83A72ABC4B97006E069A /* Clean_MVVMUITestsLaunchTests.swift */; };
+		F8BD83D72ABC57FE006E069A /* CoordintaorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83D62ABC57FE006E069A /* CoordintaorProtocol.swift */; };
+		F8BD83DA2ABC5839006E069A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83D92ABC5839006E069A /* AppCoordinator.swift */; };
+		F8BD83DC2ABC58DD006E069A /* AppFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83DB2ABC58DD006E069A /* AppFactoryProtocol.swift */; };
+		F8BD83DE2ABC5937006E069A /* AppFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83DD2ABC5937006E069A /* AppFactoryImp.swift */; };
+		F8BD83E12ABC6273006E069A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83E02ABC6273006E069A /* HomeCoordinator.swift */; };
+		F8BD83E42ABC644D006E069A /* HomeFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83E32ABC644D006E069A /* HomeFactoryProtocol.swift */; };
+		F8BD83E72ABC6474006E069A /* HomeFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD83E62ABC6474006E069A /* HomeFactoryImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		F8BD83A12ABC4B97006E069A /* Clean_MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clean_MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BD83A52ABC4B97006E069A /* Clean_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clean_MVVMUITests.swift; sourceTree = "<group>"; };
 		F8BD83A72ABC4B97006E069A /* Clean_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clean_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8BD83D62ABC57FE006E069A /* CoordintaorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordintaorProtocol.swift; sourceTree = "<group>"; };
+		F8BD83D92ABC5839006E069A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F8BD83DB2ABC58DD006E069A /* AppFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactoryProtocol.swift; sourceTree = "<group>"; };
+		F8BD83DD2ABC5937006E069A /* AppFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactoryImp.swift; sourceTree = "<group>"; };
+		F8BD83E02ABC6273006E069A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F8BD83E32ABC644D006E069A /* HomeFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactoryProtocol.swift; sourceTree = "<group>"; };
+		F8BD83E62ABC6474006E069A /* HomeFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactoryImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +327,7 @@
 		F8BD83CC2ABC536E006E069A /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD83D52ABC57DA006E069A /* AppCoordinator */,
 				F8BD83CE2ABC538C006E069A /* CoordinatorScreen */,
 				F8BD83CD2ABC5386006E069A /* Utilis */,
 			);
@@ -329,6 +344,7 @@
 		F8BD83CE2ABC538C006E069A /* CoordinatorScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD83E02ABC6273006E069A /* HomeCoordinator.swift */,
 			);
 			path = CoordinatorScreen;
 			sourceTree = "<group>";
@@ -336,6 +352,8 @@
 		F8BD83CF2ABC53A2006E069A /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD83E52ABC6462006E069A /* AppFactory */,
+				F8BD83E22ABC643A006E069A /* Home */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -362,6 +380,33 @@
 				F8BD83842ABC4B95006E069A /* AppDelegate.swift */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		F8BD83D52ABC57DA006E069A /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD83D92ABC5839006E069A /* AppCoordinator.swift */,
+				F8BD83D62ABC57FE006E069A /* CoordintaorProtocol.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		F8BD83E22ABC643A006E069A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD83E62ABC6474006E069A /* HomeFactoryImp.swift */,
+				F8BD83E32ABC644D006E069A /* HomeFactoryProtocol.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8BD83E52ABC6462006E069A /* AppFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD83DD2ABC5937006E069A /* AppFactoryImp.swift */,
+				F8BD83DB2ABC58DD006E069A /* AppFactoryProtocol.swift */,
+			);
+			path = AppFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,7 +540,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BD83892ABC4B95006E069A /* HomeMenuController.swift in Sources */,
+				F8BD83E42ABC644D006E069A /* HomeFactoryProtocol.swift in Sources */,
 				F8BD83852ABC4B95006E069A /* AppDelegate.swift in Sources */,
+				F8BD83DC2ABC58DD006E069A /* AppFactoryProtocol.swift in Sources */,
+				F8BD83DA2ABC5839006E069A /* AppCoordinator.swift in Sources */,
+				F8BD83D72ABC57FE006E069A /* CoordintaorProtocol.swift in Sources */,
+				F8BD83E12ABC6273006E069A /* HomeCoordinator.swift in Sources */,
+				F8BD83DE2ABC5937006E069A /* AppFactoryImp.swift in Sources */,
+				F8BD83E72ABC6474006E069A /* HomeFactoryImp.swift in Sources */,
 				F8BD83872ABC4B95006E069A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
