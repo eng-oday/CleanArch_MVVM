@@ -11,6 +11,8 @@ import UIKit
 
 class HomeFactoryImp:HomeFactoryProtocol {
     func makeVC() -> UIViewController {
-       HomeMenuController()
+        let homeMenuController = HomeMenuController()
+        homeMenuController.title = "Rick And Morty"
+       return homeMenuController
     }
 }
